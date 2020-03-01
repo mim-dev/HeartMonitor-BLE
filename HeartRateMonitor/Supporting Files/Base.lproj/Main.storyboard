@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="paC-cJ-azq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Heart Rate Monitor-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Heart Rate Monitor" id="BYZ-38-t0r" customClass="MonitorViewController" customModule="HeartRateMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct1-g0-9nP">
+                                <rect key="frame" x="179" y="808" width="56" height="30"/>
+                                <state key="normal" title="connect">
+                                    <color key="titleColor" red="0.47058823529999999" green="0.12549019610000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectionButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vyi-Kc-bVt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHq-kO-HWu">
+                                <rect key="frame" x="194.5" y="176" width="25" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.47058823529411764" green="0.12549019607843137" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z49-no-yWl">
+                                <rect key="frame" x="168" y="218" width="78" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.47058823529411764" green="0.12549019607843137" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensor Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzl-Y6-2QN">
+                                <rect key="frame" x="148.5" y="324" width="117" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.12549019610000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-iz-JeZ">
+                                <rect key="frame" x="194.5" y="282" width="25" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.12549019610000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uHq-kO-HWu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="ABx-K8-y2U"/>
+                            <constraint firstItem="z49-no-yWl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DEd-dV-g6l"/>
+                            <constraint firstItem="bMk-iz-JeZ" firstAttribute="top" secondItem="z49-no-yWl" secondAttribute="bottom" constant="44" id="GkT-F0-IE7"/>
+                            <constraint firstItem="z49-no-yWl" firstAttribute="top" secondItem="uHq-kO-HWu" secondAttribute="bottom" constant="8" id="JHg-cg-4Bb"/>
+                            <constraint firstItem="bMk-iz-JeZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SMG-W9-pnS"/>
+                            <constraint firstItem="ct1-g0-9nP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZAe-g0-WcB"/>
+                            <constraint firstItem="uHq-kO-HWu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2h-dD-Pel"/>
+                            <constraint firstItem="Xzl-Y6-2QN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qIr-d8-0bp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ct1-g0-9nP" secondAttribute="bottom" constant="24" id="xMJ-em-rec"/>
+                            <constraint firstItem="Xzl-Y6-2QN" firstAttribute="top" secondItem="bMk-iz-JeZ" secondAttribute="bottom" constant="8" id="xjH-JS-LQZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3gK-3F-afI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="connectionButton" destination="ct1-g0-9nP" id="Jyc-i5-3up"/>
+                        <outlet property="heartRateDisplay" destination="uHq-kO-HWu" id="1GX-kX-lwP"/>
+                        <outlet property="sensorPositionDisplay" destination="bMk-iz-JeZ" id="huO-Ne-Y5X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BBR-Tm-mgM">
+            <objects>
+                <navigationController id="paC-cJ-azq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q3z-wA-xbx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="L39-LN-jFd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFd-W8-1am" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-280" y="116"/>
+        </scene>
+        <!--Select Heart Rate Minitor-->
+        <scene sceneID="eKk-Ke-U7t">
+            <objects>
+                <viewController storyboardIdentifier="SelectHeartRateMonitor" title="Select Heart Rate Minitor" id="2TO-eg-vz8" customClass="PeripheralConnectViewController" customModule="HeartRateMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAc-C3-01l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aaN-7D-rmb">
+                                <rect key="frame" x="8" y="52" width="398" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" red="0.47058823529999999" green="0.31764705879999999" blue="0.66274509800000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OTx-ch-GSo" firstAttribute="trailing" secondItem="aaN-7D-rmb" secondAttribute="trailing" constant="8" id="0Du-tb-KMw"/>
+                            <constraint firstItem="OTx-ch-GSo" firstAttribute="bottom" secondItem="aaN-7D-rmb" secondAttribute="bottom" constant="8" id="FAS-m6-anI"/>
+                            <constraint firstItem="aaN-7D-rmb" firstAttribute="top" secondItem="OTx-ch-GSo" secondAttribute="top" constant="8" id="bBH-Qj-ehK"/>
+                            <constraint firstItem="aaN-7D-rmb" firstAttribute="leading" secondItem="OTx-ch-GSo" secondAttribute="leading" constant="8" id="dhj-FN-tra"/>
+                            <constraint firstItem="aaN-7D-rmb" firstAttribute="leading" secondItem="OTx-ch-GSo" secondAttribute="leading" constant="8" id="ocD-9I-fHM"/>
+                            <constraint firstItem="OTx-ch-GSo" firstAttribute="trailing" secondItem="aaN-7D-rmb" secondAttribute="trailing" constant="8" id="qq4-Mi-nva"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OTx-ch-GSo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LR2-sL-qjQ"/>
+                    <connections>
+                        <outlet property="adevrtisingPeripheralTableView" destination="aaN-7D-rmb" id="MUU-CV-cQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7l-nl-qK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.5797101449277" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>

@@ -9,21 +9,34 @@
 /* Begin PBXBuildFile section */
 		02815877240B0F6F00B07251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02815876240B0F6F00B07251 /* AppDelegate.swift */; };
 		02815879240B0F6F00B07251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02815878240B0F6F00B07251 /* SceneDelegate.swift */; };
-		0281587B240B0F6F00B07251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281587A240B0F6F00B07251 /* ViewController.swift */; };
+		0281587B240B0F6F00B07251 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281587A240B0F6F00B07251 /* MonitorViewController.swift */; };
 		0281587E240B0F6F00B07251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0281587C240B0F6F00B07251 /* Main.storyboard */; };
 		02815880240B0F7000B07251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0281587F240B0F7000B07251 /* Assets.xcassets */; };
 		02815883240B0F7000B07251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02815881240B0F7000B07251 /* LaunchScreen.storyboard */; };
+		02D774C6240C30A70025DF4C /* ContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D774C5240C30A70025DF4C /* ContextManager.swift */; };
+		02D774C9240C58070025DF4C /* HeartRateMonitorServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D774C8240C58070025DF4C /* HeartRateMonitorServiceUtil.swift */; };
+		02D774CB240C58AF0025DF4C /* HeartRateMonitorServiceCharacteristicsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D774CA240C58AF0025DF4C /* HeartRateMonitorServiceCharacteristicsUtil.swift */; };
+		02D774CD240C6B000025DF4C /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D774CC240C6B000025DF4C /* ColorUtil.swift */; };
+		02DDDB5B240B14E200CEF966 /* PeripheralConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DDDB5A240B14E200CEF966 /* PeripheralConnectViewController.swift */; };
+		02DDDB60240B16AF00CEF966 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DDDB5F240B16AF00CEF966 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02815873240B0F6F00B07251 /* HeartRateMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02815876240B0F6F00B07251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02815878240B0F6F00B07251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0281587A240B0F6F00B07251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0281587A240B0F6F00B07251 /* MonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
 		0281587D240B0F6F00B07251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0281587F240B0F7000B07251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02815882240B0F7000B07251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02815884240B0F7000B07251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C38ACB240C7AEB00C43BE4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		02D774C5240C30A70025DF4C /* ContextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextManager.swift; sourceTree = "<group>"; };
+		02D774C8240C58070025DF4C /* HeartRateMonitorServiceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMonitorServiceUtil.swift; sourceTree = "<group>"; };
+		02D774CA240C58AF0025DF4C /* HeartRateMonitorServiceCharacteristicsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMonitorServiceCharacteristicsUtil.swift; sourceTree = "<group>"; };
+		02D774CC240C6B000025DF4C /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		02DDDB5A240B14E200CEF966 /* PeripheralConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralConnectViewController.swift; sourceTree = "<group>"; };
+		02DDDB5F240B16AF00CEF966 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DDDB60240B16AF00CEF966 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +54,11 @@
 		0281586A240B0F6F00B07251 = {
 			isa = PBXGroup;
 			children = (
+				02C38ACC240C7F5F00C43BE4 /* Support */,
+				02C38ACB240C7AEB00C43BE4 /* README.md */,
 				02815875240B0F6F00B07251 /* HeartRateMonitor */,
 				02815874240B0F6F00B07251 /* Products */,
+				02DDDB5E240B16AF00CEF966 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,59 @@
 		02815875240B0F6F00B07251 /* HeartRateMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				02D774C7240C57E80025DF4C /* Util */,
+				02DDDB5D240B15D300CEF966 /* View */,
+				02DDDB5C240B15BB00CEF966 /* Supporting Files */,
 				02815876240B0F6F00B07251 /* AppDelegate.swift */,
 				02815878240B0F6F00B07251 /* SceneDelegate.swift */,
-				0281587A240B0F6F00B07251 /* ViewController.swift */,
-				0281587C240B0F6F00B07251 /* Main.storyboard */,
 				0281587F240B0F7000B07251 /* Assets.xcassets */,
-				02815881240B0F7000B07251 /* LaunchScreen.storyboard */,
 				02815884240B0F7000B07251 /* Info.plist */,
+				02D774C5240C30A70025DF4C /* ContextManager.swift */,
 			);
 			path = HeartRateMonitor;
+			sourceTree = "<group>";
+		};
+		02C38ACC240C7F5F00C43BE4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		02D774C7240C57E80025DF4C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				02D774C8240C58070025DF4C /* HeartRateMonitorServiceUtil.swift */,
+				02D774CA240C58AF0025DF4C /* HeartRateMonitorServiceCharacteristicsUtil.swift */,
+				02D774CC240C6B000025DF4C /* ColorUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		02DDDB5C240B15BB00CEF966 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0281587C240B0F6F00B07251 /* Main.storyboard */,
+				02815881240B0F7000B07251 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02DDDB5D240B15D300CEF966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02DDDB5A240B14E200CEF966 /* PeripheralConnectViewController.swift */,
+				0281587A240B0F6F00B07251 /* MonitorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02DDDB5E240B16AF00CEF966 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02DDDB5F240B16AF00CEF966 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0281587B240B0F6F00B07251 /* ViewController.swift in Sources */,
+				0281587B240B0F6F00B07251 /* MonitorViewController.swift in Sources */,
+				02D774CB240C58AF0025DF4C /* HeartRateMonitorServiceCharacteristicsUtil.swift in Sources */,
+				02D774C6240C30A70025DF4C /* ContextManager.swift in Sources */,
+				02DDDB5B240B14E200CEF966 /* PeripheralConnectViewController.swift in Sources */,
+				02D774C9240C58070025DF4C /* HeartRateMonitorServiceUtil.swift in Sources */,
+				02D774CD240C6B000025DF4C /* ColorUtil.swift in Sources */,
 				02815877240B0F6F00B07251 /* AppDelegate.swift in Sources */,
 				02815879240B0F6F00B07251 /* SceneDelegate.swift in Sources */,
 			);
